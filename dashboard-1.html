@@ -1,0 +1,942 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css" /> </head>
+
+<body>
+	<!-- Topbar Header -->
+	<header class="topbar_design p-2">
+		<div class="container">
+			<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start pb-2 pb-lg-0">
+				<a href="/" class="d-flex align-items-center me-lg-auto mb-2 mb-lg-0 text-dark text-decoration-none"> <img src="myrkcl_logo.png" alt=""/> </a>
+				<form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-5 topbar_design_01 ">
+					<div class="input-group">
+						<input class="form-control border-end-0 border rounded-pill" type="search" placeholder="search" id="example-search-input"> <span class="input-group-append">
+                        <button class="btn rounded-pill ms-n5" type="button">
+                            <i class="fa fa-search" style="color: #d5d5d5;"></i>
+                        </button>
+                    </span> </div>
+				</form>
+				<div class="text-end topbar_design_03 me-4">
+					<a href="#" class="text-center d-block text-white text-decoration-none position-relative" id="message_icon" style="font-weight: 600;"> <i class="fa fa-envelope-o d-block fa-2x mb-1"></i> Messages <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">99</span> </a>
+				</div>
+				<div class="dropdown text-end topbar_design_03 me-4">
+					<a href="#" class="text-center d-block text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="true"> <i class="fa fa-sign-in d-block fa-2x mb-1"></i> Login Other Portal </a>
+					<ul class="dropdown-menu text-small " aria-labelledby="dropdownUser1">
+						<li class="background"> <img src="lo.png"> </li>
+						<li>
+							<a href="https://ilearn.myrkcl.com/" target="_blank" class="text-decoration-none text-dark d-flex justify-content-between align-items-center"> <img src="Group 39732.png" >ILEARN Portal <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </a>
+						</li>
+						<li>
+							<a href="https://support.myrkcl.com/" target="_blank" class="text-decoration-none text-dark d-flex justify-content-between align-items-center"> <img src="Path 76673.png" >Support Portal <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </a>
+						</li>
+						<li>
+							<a href="https://click.rkcl.in/" target="_blank" class="text-decoration-none text-dark d-flex justify-content-between align-items-center"> <img src="Group 39733.png" >Click Portal <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </a>
+						</li>
+						<li>
+							<a href="#" class="text-decoration-none text-dark d-flex justify-content-between align-items-center"> <img src="Group 39736.png" >WCD Portal <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </a>
+						</li>
+						<li>
+							<a href="https://rkcl.in/" target="_blank" class="text-decoration-none text-dark d-flex justify-content-between align-items-center"> <img src="Group 39735.png" >www.rkcl.in <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </a>
+						</li>
+					</ul>
+				</div>
+				<div class="dropdown text-end topbar_design_03">
+					<a href="#" class="text-center d-block text-white text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="true"> <i class="fa fa-user-circle-o d-block fa-2x mb-1"></i> Account </a>
+					<ul class="dropdown-menu text-small" aria-labelledby="dropdownUser2">
+						<li class="position-relative background"> <img src="user-icon.png" style="width: 30%;" /> <a href="#" class="position-absolute edit text-dark"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a> </li>
+						<li class="text-decoration-none text-dark text-center align-items-center"> <b class="d-block">34290065</b>
+							<p class="mb-0">ITGK Owner</p>
+						</li>
+						<li class="text-center align-items-center"> <a href="#" class="text-decoration-none text-dark">
+                            Chnage Password
+                        </a> </li>
+						<li class="text-center align-items-center logout"> <a href="#" class="text-decoration-none text-white">
+                            Logout 
+                        </a> </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Topbar Header -->
+
+	<!-- Nav Header -->
+	<div class="bg-body shadow-sm other_admin">
+		<nav class="navbar navbar-expand-lg navbar-light rounded" aria-label="Main navigation">
+			<div class="container">
+				<a class="navbar-brand brand_name" href="#">MY RKCL</a>
+				<button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				<div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+					<a href="#" id="menu_icon">
+						<i class="fa fa-times" aria-hidden="true"></i>
+					</a>
+					<ul class="navbar-nav justify-content-evenly">
+						<li class="nav-item">
+							<a class="nav-link dropdown-toggle text-dark text-decoration-none" href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false"> <img src="2622693.png" class="d-block nav_img" /> Channel Partner </a>
+								<ul class="dropdown-menu" aria-labelledby="dropdown10">
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">IT-GK Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Bank Account for Share Payment</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Declare Owner Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Details</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">EOI Application</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Apply EOI</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">ITGK-Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Premises Detail</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">Intake Management</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Add System Information</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">Channel Partner Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Organization Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">IT Peripherals Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Premises Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Organization Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">IT Peripherals Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Premises Details</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">Paperless AO Registration</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Register AO Details - Step 1</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">AO Center Code Creation - Step 2</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Upload NCR Visit Photos - Step 3</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">AO Final Approval - Step 4</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Upload SP-ITGK Signed Agreement - Step 5</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">RKCL Final Approval - Step 6</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Print NCR GST Receipt</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Edit NCR AO Documents</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Track AO Status</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">AO Status Report</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Faculty Result Report</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Update NCR Feedback</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">EOI Application</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Apply EOI</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">IT-GK Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Bank Account for Share Payment</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Declare Owner Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Details</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">EOI Application</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Apply EOI</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">ITGK-Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Premises Detail</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">Intake Management</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Add System Information</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">Channel Partner Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Organization Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">IT Peripherals Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Premises Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Organization Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">IT Peripherals Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Premises Details</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">EOI Application</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Apply EOI</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">EOI Application</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Apply EOI</a></li>
+									  	</ul>
+									</li>
+								</ul>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link dropdown-toggle text-dark text-decoration-none" href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false"> <img src="2784403.png" class="d-block nav_img" /> Learner  </a>
+								<ul class="dropdown-menu" aria-labelledby="dropdown10">
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">IT-GK Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Bank Account for Share Payment</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Declare Owner Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Details</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">EOI Application</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Apply EOI</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">ITGK-Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Premises Detail</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">Intake Management</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Add System Information</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">Channel Partner Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Organization Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">IT Peripherals Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Premises Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Organization Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">IT Peripherals Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Premises Details</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">Paperless AO Registration</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Register AO Details - Step 1</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">AO Center Code Creation - Step 2</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Upload NCR Visit Photos - Step 3</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">AO Final Approval - Step 4</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Upload SP-ITGK Signed Agreement - Step 5</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">RKCL Final Approval - Step 6</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Print NCR GST Receipt</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Edit NCR AO Documents</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Track AO Status</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">AO Status Report</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Faculty Result Report</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Update NCR Feedback</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">EOI Application</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Apply EOI</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">IT-GK Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Bank Account for Share Payment</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Declare Owner Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Details</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">EOI Application</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Apply EOI</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">ITGK-Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Premises Detail</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">Intake Management</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Add System Information</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">Channel Partner Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Organization Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">IT Peripherals Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Premises Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Organization Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">IT Peripherals Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Premises Details</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">EOI Application</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Apply EOI</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">EOI Application</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Apply EOI</a></li>
+									  	</ul>
+									</li>
+								</ul>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link dropdown-toggle text-dark text-decoration-none" href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false"> <img src="education.png" class="d-block nav_img" /> Examination  </a>
+								<ul class="dropdown-menu" aria-labelledby="dropdown10">
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">IT-GK Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Bank Account for Share Payment</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Declare Owner Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Details</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">EOI Application</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Apply EOI</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">ITGK-Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Premises Detail</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">Intake Management</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Add System Information</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">Channel Partner Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Organization Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">IT Peripherals Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Premises Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Organization Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">IT Peripherals Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Premises Details</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">Paperless AO Registration</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Register AO Details - Step 1</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">AO Center Code Creation - Step 2</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Upload NCR Visit Photos - Step 3</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">AO Final Approval - Step 4</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Upload SP-ITGK Signed Agreement - Step 5</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">RKCL Final Approval - Step 6</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Print NCR GST Receipt</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Edit NCR AO Documents</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Track AO Status</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">AO Status Report</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Faculty Result Report</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Update NCR Feedback</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">EOI Application</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Apply EOI</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">IT-GK Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Bank Account for Share Payment</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Declare Owner Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Details</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">EOI Application</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Apply EOI</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">ITGK-Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Premises Detail</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">Intake Management</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Add System Information</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">Channel Partner Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Organization Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">IT Peripherals Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Premises Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Organization Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">IT Peripherals Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Premises Details</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">EOI Application</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Apply EOI</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">EOI Application</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Apply EOI</a></li>
+									  	</ul>
+									</li>
+								</ul>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link dropdown-toggle text-dark text-decoration-none" href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false"> <img src="Group 39713.png" class="d-block nav_img" /> Finance  </a>
+								<ul class="dropdown-menu" aria-labelledby="dropdown10">
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">IT-GK Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Bank Account for Share Payment</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Declare Owner Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Details</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">EOI Application</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Apply EOI</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">ITGK-Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Premises Detail</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">Intake Management</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Add System Information</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">Channel Partner Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Organization Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">IT Peripherals Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Premises Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Organization Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">IT Peripherals Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Premises Details</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">Paperless AO Registration</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Register AO Details - Step 1</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">AO Center Code Creation - Step 2</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Upload NCR Visit Photos - Step 3</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">AO Final Approval - Step 4</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Upload SP-ITGK Signed Agreement - Step 5</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">RKCL Final Approval - Step 6</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Print NCR GST Receipt</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Edit NCR AO Documents</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Track AO Status</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">AO Status Report</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Faculty Result Report</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Update NCR Feedback</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">EOI Application</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Apply EOI</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">IT-GK Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Bank Account for Share Payment</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Declare Owner Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Details</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">EOI Application</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Apply EOI</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">ITGK-Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Premises Detail</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">Intake Management</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Add System Information</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">Channel Partner Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Organization Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">IT Peripherals Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Premises Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Organization Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">IT Peripherals Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Premises Details</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">EOI Application</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Apply EOI</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">EOI Application</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Apply EOI</a></li>
+									  	</ul>
+									</li>
+								</ul>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link dropdown-toggle text-dark text-decoration-none" href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false"> <img src="Group 39714.png" class="d-block nav_img" /> Reports  </a>
+								<ul class="dropdown-menu" aria-labelledby="dropdown10">
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">IT-GK Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Bank Account for Share Payment</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Declare Owner Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Details</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">EOI Application</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Apply EOI</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">ITGK-Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Premises Detail</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">Intake Management</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Add System Information</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">Channel Partner Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Organization Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">IT Peripherals Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Premises Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Organization Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">IT Peripherals Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Premises Details</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">Paperless AO Registration</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Register AO Details - Step 1</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">AO Center Code Creation - Step 2</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Upload NCR Visit Photos - Step 3</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">AO Final Approval - Step 4</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Upload SP-ITGK Signed Agreement - Step 5</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">RKCL Final Approval - Step 6</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Print NCR GST Receipt</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Edit NCR AO Documents</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Track AO Status</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">AO Status Report</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Faculty Result Report</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Update NCR Feedback</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">EOI Application</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Apply EOI</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">IT-GK Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Bank Account for Share Payment</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Declare Owner Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Details</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">EOI Application</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Apply EOI</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">ITGK-Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Premises Detail</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">Intake Management</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Add System Information</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">Channel Partner Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Organization Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">IT Peripherals Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Premises Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Organization Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">IT Peripherals Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Premises Details</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">EOI Application</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Apply EOI</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">EOI Application</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Apply EOI</a></li>
+									  	</ul>
+									</li>
+								</ul>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link dropdown-toggle text-dark text-decoration-none" href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false"> <img src="01.png" class="d-block nav_img" /> Inventory  </a>
+								<ul class="dropdown-menu" aria-labelledby="dropdown10">
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">IT-GK Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Bank Account for Share Payment</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Declare Owner Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Details</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">EOI Application</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Apply EOI</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">ITGK-Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Premises Detail</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">Intake Management</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Add System Information</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">Channel Partner Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Organization Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">IT Peripherals Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Premises Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Organization Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">IT Peripherals Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Premises Details</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">Paperless AO Registration</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Register AO Details - Step 1</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">AO Center Code Creation - Step 2</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Upload NCR Visit Photos - Step 3</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">AO Final Approval - Step 4</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Upload SP-ITGK Signed Agreement - Step 5</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">RKCL Final Approval - Step 6</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Print NCR GST Receipt</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Edit NCR AO Documents</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Track AO Status</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">AO Status Report</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Faculty Result Report</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Update NCR Feedback</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">EOI Application</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Apply EOI</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">IT-GK Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Bank Account for Share Payment</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Declare Owner Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Details</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">EOI Application</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Apply EOI</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">ITGK-Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Premises Detail</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">Intake Management</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Add System Information</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">Channel Partner Details</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Organization Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">IT Peripherals Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Premises Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Organization Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">IT Peripherals Details</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">HR Detail</a></li>
+											<li><a class="text-decoration-none text-dark" href="#">Premises Details</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">EOI Application</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Apply EOI</a></li>
+									  	</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="text-decoration-none text-dark dropdown-toggle" href="#">EOI Application</a>
+									  	<ul class="dropdown-menu child-menu">
+											<li><a class="text-decoration-none text-dark" href="#">Apply EOI</a></li>
+									  	</ul>
+									</li>
+								</ul>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<!-- Nav Header -->
+
+	<!-- New Slider -->
+	<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active" data-bs-interval="2000">
+			<img src="1.png" class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item" data-bs-interval="2000">
+			<img src="2.png" class="d-block w-100" alt="...">
+			</div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button>
+		</div>
+	<!-- New Slider -->
+
+	<!-- Footer Submenu Link -->
+	<div class="container footer_link p-3">
+		<div class="row align-items-center">
+			<div class="col-lg-9 col-md-12 left_link">
+			<ul class="list-unstyled mb-0 d-md-flex d-block justify-content-evenly">
+				<li><a href="" class="text-decoration-none text-dark"><i class="fa fa-cog" aria-hidden="true"></i>Softwares</a></li>
+				<li><a href="" class="text-decoration-none text-dark"><i class="fa fa-bookmark-o" aria-hidden="true"></i>My RKCL Guide</a></li>
+				<li><a href="" class="text-decoration-none text-dark"><i class="fa fa-comment-o" aria-hidden="true"></i>RS-CFA Update</a></li>
+				<li><a href="" class="text-decoration-none text-dark"><i class="fa fa-download" aria-hidden="true"></i>App Downlaod</a></li>
+				<li><a href="" class="text-decoration-none text-dark"><i class="fa fa-star-o" aria-hidden="true"></i>Survey</a></li>
+				<li><a href="" class="text-decoration-none text-dark"><i class="fa fa-camera" aria-hidden="true"></i>Gallery</a></li>
+			</ul>
+		</div>
+		<div class="col-lg-3 col-md-12 text-center time_date">
+			<ul class="list-unstyled mb-0 d-flex justify-content-lg-between justify-content-center">
+				<li>Friday 11 February 2022</li>
+				<li>11 : 44 : 50</li>
+				</ul>
+		</div>	
+	</div>
+</div>
+<!-- Footer Submenu Link -->
+
+<!-- Footer-->
+<div class="footer_bottom p-3">
+	<div class="container">
+		<div class="row align-items-center text-white">
+			<ul class="list-unstyled mb-0 d-block d-lg-flex justify-content-between text-lg-start text-center">
+				<li><i class="fa fa-copyright" aria-hidden="true"></i>RKCL 2008-2017</li>
+				<li><i class="fa fa-map-signs" aria-hidden="true"></i>7A Jhalana Institutional Area , Behind R.T.O Jaipur -302004</li>
+				<li><i class="fa fa-phone" aria-hidden="true"></i>0141-5159700</li>
+				<li><i class="fa fa-envelope-o" aria-hidden="true"></i>info@rkcl.in</li>
+				<li>
+					<a href="#" target="_blank" class="text-decoration-none text-white">
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+					</a>
+					<a href="#" target="_blank" class="text-decoration-none text-white">
+						<i class="fa fa-linkedin" aria-hidden="true"></i>
+					</a>
+					<a href="#" target="_blank" class="text-decoration-none text-white">
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- Footer-->
+
+<!-- Message Box -->
+<div class="card message_box shadow-sm">
+	<div class="card-header text-white d-flex justify-content-between align-items-center p-3">
+	  <h6 class="mb-0"><i class="fa fa-commenting-o" aria-hidden="true"></i>
+		Messages</h6>
+		<i class="fa fa-times" id="close_icon" aria-hidden="true"></i>
+	</div>
+	<div class="card-body">
+		<div class="col message_list">
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores non neque, a et velit odio, repellat sint eius.</p>
+			<ul class="list-unstyled mb-0 d-flex justify-content-between">
+				<li>June 29th 2018</li>
+				<li>8:43 PM</li>
+			</ul>
+		</div>
+		<div class="col message_list">
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores non neque, a et velit odio, repellat sint eius.</p>
+			<ul class="list-unstyled mb-0 d-flex justify-content-between">
+				<li>June 29th 2018</li>
+				<li>8:43 PM</li>
+			</ul>
+		</div>
+		<div class="col message_list">
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores non neque, a et velit odio, repellat sint eius.</p>
+			<ul class="list-unstyled mb-0 d-flex justify-content-between">
+				<li>June 29th 2018</li>
+				<li>8:43 PM</li>
+			</ul>
+		</div>
+		<div class="col message_list">
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores non neque, a et velit odio, repellat sint eius.</p>
+			<ul class="list-unstyled mb-0 d-flex justify-content-between">
+				<li>June 29th 2018</li>
+				<li>8:43 PM</li>
+			</ul>
+		</div>
+		<div class="col message_list">
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores non neque, a et velit odio, repellat sint eius.</p>
+			<ul class="list-unstyled mb-0 d-flex justify-content-between">
+				<li>June 29th 2018</li>
+				<li>8:43 PM</li>
+			</ul>
+		</div>
+	</div>
+  </div>
+
+<!-- Message Box -->
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+	<script>
+		$('#close_icon').click(function(){
+			$('.message_box').hide();
+		});
+		$('#menu_icon').click(function(){
+			$('.offcanvas-collapse').removeClass('open');
+		});
+		(function () {
+  		document.querySelector('#navbarSideCollapse').addEventListener('click', function () {
+    	document.querySelector('.offcanvas-collapse').classList.toggle('open')
+  })
+})()
+	</script>
+</body>
+
+</html>
