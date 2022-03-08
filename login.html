@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		<div class="row justify-content-center wrap d-md-flex d-block">
+			<div class="bg-img"></div>
+			<div class="login-wrap p-4 p-md-5">
+				<h4>Login As</h4>
+				<div class="tabs">
+					<input type="radio" id="radio-1" name="tabs" checked />
+					<label class="tab" for="radio-1"><img src="2784403.png" />Learner</label>
+					<input type="radio" id="radio-2" name="tabs" />
+					<label class="tab" for="radio-2"><img src="2622693.png" />Channel Partner</label>
+					<span class="glider"></span>
+				</div>
+				<div class="tab-content">
+					<!-- Learner Code -->
+					<div class="learner-form">
+						<form>
+							<div class="mb-3">
+								<label for="exampleInputEmail1" class="form-label ">Learner Code</label>
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Learner Code">
+									<button class="btn btn-success ms-4 rounded" type="button">Verify</button>
+								</div>
+							</div>
+							<div class="mb-3">
+								<label for="exampleInputEmail1" class="form-label ">OTP Code</label>
+								<input type="text" class="form-control" placeholder="OTP Code">
+							</div>
+							<div class="d-grid gap-2 d-md-block mt-4 text-center button-group">
+								<button class="btn btn-primary" type="button">Sign In</button>
+								<button class="btn btn-danger" type="button">Reset</button>
+							</div>
+						</form>
+					</div>
+					<!-- Learner Code -->
+
+					<!-- Channel Partner Code -->
+					<div class="channel-form" style="display:none;">
+						<form>
+							<div class="mb-3">
+								<label for="exampleInputEmail1" class="form-label ">User Name</label>
+									<input type="text" class="form-control" placeholder="Learner Code">
+							</div>
+							<div class="mb-3">
+								<label for="exampleInputEmail1" class="form-label ">Password</label>
+								<input type="password" class="form-control" placeholder="OTP Code">
+							</div>
+							<div class="mb-3">
+								<label for="exampleInputEmail1" class="form-label ">Enter The Code</label>
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Enter Captcha">
+									<button class="btn btn-outline-secondary ms-4 rounded" type="button">wpruw1</button>
+								</div>
+							</div>
+							<div class="refresh_captcha">
+								<p>Can't Read The Image? <a href="#">Click Here</a> To Refresh</p>
+							</div>
+							<div class="d-grid gap-2 d-md-block mt-4 mb-2 text-center button-group">
+								<button class="btn btn-primary" type="button">Sign In</button>
+								<button class="btn btn-danger" type="button">Reset</button>
+							</div>
+							<div class="forgot_password mt-2">
+								<a href="#">Forgot Password ?</a>
+							</div>
+						</form>
+					</div>
+					<!-- Channel Partner Code -->
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<!-- Footer-->
+	<div class="footer_bottom p-3">
+		<div class="container">
+			<div class="row align-items-center text-white">
+				<ul class="list-unstyled mb-0 d-block d-lg-flex justify-content-between text-lg-start text-center">
+					<li><i class="fa fa-copyright" aria-hidden="true"></i>RKCL 2008-2017</li>
+					<li><i class="fa fa-map-signs" aria-hidden="true"></i>7A Jhalana Institutional Area , Behind R.T.O
+						Jaipur -302004</li>
+					<li><i class="fa fa-phone" aria-hidden="true"></i>0141-5159700</li>
+					<li><i class="fa fa-envelope-o" aria-hidden="true"></i>info@rkcl.in</li>
+					<li>
+						<a href="#" target="_blank" class="text-decoration-none text-white">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</a>
+						<a href="#" target="_blank" class="text-decoration-none text-white">
+							<i class="fa fa-linkedin" aria-hidden="true"></i>
+						</a>
+						<a href="#" target="_blank" class="text-decoration-none text-white">
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- Footer-->
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+		integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+		integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+		crossorigin="anonymous"></script>
+
+	<script>
+		$('#radio-2').click(function () {
+            $('.channel-form').css('display', 'block');
+            $('.learner-form').css('display', 'none');
+        });
+		$('#radio-1').click(function () {
+            $('.channel-form').css('display', 'none');
+            $('.learner-form').css('display', 'block');
+        });
+	</script>
+</body>
+
+</html>
