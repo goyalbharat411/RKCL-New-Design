@@ -141,9 +141,9 @@ body {
 .super_admin .cmplt_menu ul li:hover a {
     color: #00AEEF;
 }
-.super_admin .cmplt_menu .common_column:first-child {
+/* .super_admin .cmplt_menu .common_column:first-child {
     margin-top: 0px;
-}
+} */
 .super_admin .cmplt_menu .common_column {
     margin-top: 15px;
 }
