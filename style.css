@@ -172,18 +172,22 @@ body {
 .other_admin .nav-link:after {
     display: none;
 }
+.height-auto, .child-menu {
+    min-height: 550px;
+}
 .other_admin .dropdown-menu {
     padding: 0px;
     border: 0;
     box-shadow: 0px 3px 15px #00000029;
-    width: 220px;
+    min-width: 220px;
+    border-radius: 0;
     /* margin-top: 9px; */
 }
 .other_admin .navbar-nav li:hover > .dropdown-menu {
     display: block;
 }
 .other_admin .dropdown-submenu {
-    position:relative;
+    /* position:relative; */
     padding: 7px 10px 7px 10px;
     border-bottom: 1px solid #d5d5d5;
     transition: 0.5s;
@@ -204,7 +208,7 @@ body {
     opacity: 0;
     top: 0px;
     right: -20px;
-    transition: 0.5s;
+    /* transition: 0.5s; */
     font-size: 20px;
 }
 .other_admin .dropdown-submenu:hover:after {
@@ -218,10 +222,14 @@ body {
     margin-top:0px;
 }
 .other_admin .dropdown-submenu>.dropdown-menu.child-menu li {
-    padding: 7px 10px 0px 10px;
+    padding: 5px 10px 5px 10px;
     font-size: 13px;
-    line-height: 22px;
+    line-height: 25px;
+    border-bottom: 1px solid #d5d5d5;
 }
+/* .other_admin .dropdown-submenu>.dropdown-menu.child-menu li:last-child{
+    padding-bottom: 7px;
+} */
 .other_admin .dropdown-submenu>.dropdown-menu.child-menu li>a:hover{
     color: #00AEEF !important;
 }
@@ -329,20 +337,26 @@ body {
 }
 
 
-/* Login Page */
-.bg-img{
-    width: 60%;
-} 
-.login-wrap  {
-    width: 40%;
-}
-.bg-img {
-    background-image:url("banner.jpg");
+/* Login Page */ 
+.login-img {
+    /* background-image:url("banner.jpg"); */
+    background-image:url("banner2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    min-height: 604px;
-
+    min-height: 600px;
+}
+.login-information {
+    text-align: center;
+    color: #000;
+    position: absolute;
+    margin: 0 auto;
+    padding: 0 1.75rem;
+    bottom: 3rem;
+    left: 0;
+    right: 0;
+    font-size: 15px;
+    /* font-weight: 500; */
 }
 .login-wrap .tabs {
     display: flex;
@@ -443,6 +457,13 @@ body {
     text-decoration: none;
     font-size: 15px;
 }
+.footer_bottom p {
+    font-size: 15px;
+    border-bottom: 1px dashed #d5d5d5;
+    padding-bottom: 10px;
+}
+
+
 
 @media (max-width: 991.98px) {
     .offcanvas-collapse {
@@ -471,13 +492,7 @@ body {
     .other_admin .navbar-nav li:last-child > .dropdown-menu {
         right: 30px;
     }
-    .bg-img {
-        width: 50%;
-    }
-    .login-wrap {
-        width: 50%;
-    }
-    .bg-img {
+    .login-img {
         background-size: 100% 100%;
         min-height: auto;
     }
@@ -556,13 +571,7 @@ body {
     .other_admin .dropdown-menu {
         width: 100%;
     }
-    .bg-img {
-        width: 100%;
-    }
-    .login-wrap {
-        width: 100%;
-    }
-    .bg-img {
+    .login-img {
         background-size: 100% 100%;
         min-height: 350px;
     }
