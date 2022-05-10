@@ -37,7 +37,7 @@ body {
 }
 .topbar_design_03 .dropdown-menu li {
     padding: 1rem;
-    border-bottom: 1px solid #d5d5d5;
+    /* border-bottom: 1px solid #d5d5d5; */
 }
 .topbar_design_03 .dropdown-menu li a {
     font-size: 14px;
@@ -189,7 +189,7 @@ body {
 .other_admin .dropdown-submenu {
     /* position:relative; */
     padding: 7px 10px 7px 10px;
-    border-bottom: 1px solid #d5d5d5;
+    /* border-bottom: 1px solid #d5d5d5; */
     transition: 0.5s;
 }
 .other_admin .dropdown-submenu .dropdown-toggle {
@@ -225,7 +225,7 @@ body {
     padding: 5px 10px 5px 10px;
     font-size: 13px;
     line-height: 25px;
-    border-bottom: 1px solid #d5d5d5;
+    /* border-bottom: 1px solid #d5d5d5; */
 }
 /* .other_admin .dropdown-submenu>.dropdown-menu.child-menu li:last-child{
     padding-bottom: 7px;
@@ -347,7 +347,7 @@ body {
     min-height: 600px;
 }
 .login-information {
-    text-align: center;
+    /* text-align: center; */
     color: #000;
     position: absolute;
     margin: 0 auto;
