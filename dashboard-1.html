@@ -87,7 +87,7 @@
 							</a>
 								<ul class="dropdown-menu height-auto" id="cp-1" aria-labelledby="dropdown10">
 									<li class="dropdown-submenu">
-										<a class="text-decoration-none text-dark dropdown-toggle" href="#">IT-GK Details-1</a>
+										<a class="text-decoration-none dropdown-toggle" href="#">IT-GK Details-1</a>
 									  	<ul class="dropdown-menu child-menu" id="scp-1">
 											<li><a class="text-decoration-none text-dark" href="#">Bank Account for Share Payment-1</a></li>
 											<li><a class="text-decoration-none text-dark" href="#">Declare Owner Detail</a></li>
@@ -2088,7 +2088,14 @@
 			var x3 = 'sc'+this.id;
 			$('#'+x2).css('display','block');
 			$('#'+x3).css('display','block');
-			$('.other_admin .dropdown-submenu:first-child').css('background','#00AEEF');
+		});
+		$('.dropdown-menu > .dropdown-submenu').mouseover(function() {
+			if ( $( this ).is( ":first-child" ) ) {
+				$('.other_admin .dropdown-submenu:first-child').css('background','#00AEEF');
+			 $('.other_admin .dropdown-submenu:first-child a').css('color','#fff');	
+			}else{ $('.other_admin .dropdown-submenu:first-child').css('background','none'); 
+			$('.other_admin .dropdown-submenu:first-child a').css('color','#000');
+			}
 		});
 		$('.navbar-nav > .nav-item').mouseout(function() {
 			var x2 = 'c'+this.id;

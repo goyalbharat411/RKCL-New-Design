@@ -211,8 +211,14 @@ body {
     font-weight: 600;
     font-size: 14px;
 }
-.other_admin .dropdown-submenu:hover {
+.other_admin .dropdown-submenu:hover  {
     background: #00AEEF;
+}
+.other_admin .dropdown-submenu:first-child  {
+    background: #00AEEF;
+}
+.other_admin .dropdown-submenu:first-child a  {
+    color: #fff;
 }
 .other_admin .dropdown-submenu:hover .dropdown-toggle {
     color: #fff !important;
