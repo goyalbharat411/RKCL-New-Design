@@ -259,7 +259,6 @@ body {
     margin-left: 0px !important;
 }
 
-
 /* .other_admin .navbar-nav .nav-item:nth-last-child(-n+2) .child-menu {
     left: inherit;
     right: 100%;
@@ -363,24 +362,29 @@ body {
 
 /* Login Page */ 
 .login-img {
-    /* background-image:url("banner.jpg"); */
-    background-image:url("banner2.jpg");
+    background-image:url("banner.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     min-height: 600px;
+    border-right: 1px dashed #d5d5d5;
 }
 .login-information {
-    /* text-align: center; */
-    color: #000;
-    position: absolute;
-    margin: 0 auto;
-    padding: 0 1.75rem;
-    bottom: 3rem;
-    left: 0;
-    right: 0;
-    font-size: 15px;
-    /* font-weight: 500; */
+    padding: 10px;
+    background: linear-gradient(45deg, #d9d9d9, #091e55);
+}
+.news-title {
+    color: #091e55;
+    width: auto;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+}
+.news-description {
+    color: #fff;
+    width: 88%;
+    display: inline-block;
+    font-size: 16px;
 }
 .login-wrap .tabs {
     display: flex;
@@ -390,7 +394,7 @@ body {
     padding: 5px;
     border-radius: 99px;
     width: 365px;
-    margin-bottom: 35px;
+    margin: 0px auto 35px;
   }
   .login-wrap .tabs * {
     z-index: 2;
@@ -513,12 +517,9 @@ body {
 
 
 @media screen and (max-width:1199px) {
-    .other_admin .navbar-nav li:last-child > .dropdown-menu {
-        right: 30px;
-    }
     .login-img {
-        background-size: 100% 100%;
-        min-height: auto;
+        background-size: contain;
+        min-height: 500px;
     }
     .login-wrap .tabs {
         width: 100%;
@@ -528,6 +529,24 @@ body {
     }
     .login-wrap .glider {
         width: 49%;
+    }
+    .other_admin .dropdown-menu {
+        margin-left: 0;
+    }
+    .other_admin .navbar-nav .nav-item:nth-last-child(3) .dropdown-menu {
+        margin-left: -230px;
+    }
+    .other_admin .navbar-nav .nav-item:nth-last-child(3) .dropdown-menu {
+        margin-left: -230px;
+    }
+    .other_admin .navbar-nav .nav-item:nth-last-child(3) .child-menu, .other_admin .navbar-nav .nav-item:nth-last-child(4) .child-menu {
+        margin-left: -0px !important;
+    }
+    .other_admin .navbar-nav .nav-item:nth-last-child(4) .dropdown-menu {
+        margin-left: -230px;
+    }
+    .news-description {
+        width: 80%;
     }
 }
 @media screen and (max-width:991px) {
@@ -595,9 +614,12 @@ body {
     .other_admin .dropdown-menu {
         width: 100%;
     }
-    .login-img {
+    /* .login-img {
         background-size: 100% 100%;
         min-height: 350px;
+    } */
+    .other_admin .navbar-nav .nav-item:nth-last-child(3) .dropdown-menu, .other_admin .navbar-nav .nav-item:nth-last-child(4) .dropdown-menu, .other_admin .navbar-nav .nav-item:nth-last-child(2) .dropdown-menu, .other_admin .navbar-nav .nav-item:last-child .dropdown-menu {
+        margin-left: 0;
     }
     
 }
@@ -612,11 +634,28 @@ body {
     .footer_link .left_link ul li:last-child{
         border: 0;
     }
+    .login-img {
+        background-size: 100%;
+        min-height: 500px;
+        background-position: inherit;
+    }
+    .news-description {
+        width: 70%;
+    }
 }
 @media screen and (max-width:479px) {
     .super_admin .cmplt_menu .col {
         flex: 1 0 100%;
         margin-bottom: 10px;
     }
+    .login-img {
+        background-size: contain;
+        min-height: 250px;
+        background-position: center;
+    }
+    .news-description {
+        width: 100%;
+    }
 }
+
 
