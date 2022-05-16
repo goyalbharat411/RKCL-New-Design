@@ -1,21 +1,21 @@
 <!doctype html>
 <html lang="en" class="h-100">
-
 <head>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Bootstrap CSS -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="style.css" /> </head>
+	<link rel="stylesheet" href="style.css" /> 
+</head>
 
 <body class="d-flex flex-column h-100">
 	<!-- Topbar Header -->
-	<header class="topbar_design p-2">
+	<header class="topbar_design p-1">
 		<div class="container">
 			<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start pb-2 pb-lg-0">
-				<a href="/" class="d-flex align-items-center me-lg-auto mb-2 mb-lg-0 text-dark text-decoration-none"> <img src="myrkcl_logo.png" alt=""/> </a>
+				<a href="/" class="d-flex align-items-center me-lg-auto mb-2 mb-lg-0 text-dark text-decoration-none"> <img src="myrkcl_logo.png" class="topbar-logo" alt=""/> </a>
 				<form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-5 topbar_design_01 ">
 					<div class="input-group">
 						<input class="form-control border-end-0 border rounded-pill" type="search" placeholder="search" id="example-search-input"> <span class="input-group-append">
@@ -25,10 +25,10 @@
                     </span> </div>
 				</form>
 				<div class="text-end topbar_design_03 me-4">
-					<a href="#" class="text-center d-block text-white text-decoration-none position-relative" id="message_icon" style="font-weight: 600;"> <i class="fa fa-envelope-o d-block fa-2x mb-1"></i> Messages <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">99</span> </a>
+					<a href="#" class="text-center d-block text-white text-decoration-none position-relative" id="message_icon" style="font-weight: 600;"> <i class="fa fa-envelope-o d-block mb-1"></i> Messages <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">99</span> </a>
 				</div>
 				<div class="dropdown text-end topbar_design_03 me-4">
-					<a href="#" class="text-center d-block text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="true"> <i class="fa fa-sign-in d-block fa-2x mb-1"></i> Login Other Portal </a>
+					<a href="#" class="text-center d-block text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="true"> <i class="fa fa-sign-in d-block mb-1"></i> Login Other Portal </a>
 					<ul class="dropdown-menu text-small " aria-labelledby="dropdownUser1">
 						<li class="background"> <img src="lo.png"> </li>
 						<li>
@@ -49,7 +49,7 @@
 					</ul>
 				</div>
 				<div class="dropdown text-end topbar_design_03">
-					<a href="#" class="text-center d-block text-white text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="true"> <i class="fa fa-user-circle-o d-block fa-2x mb-1"></i> Account </a>
+					<a href="#" class="text-center d-block text-white text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="true"> <i class="fa fa-user-circle-o d-block mb-1"></i> Account </a>
 					<ul class="dropdown-menu text-small" aria-labelledby="dropdownUser2">
 						<li class="position-relative background"> <img src="user-icon.png" style="width: 30%;" /> <a href="#" class="position-absolute edit text-dark"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a> </li>
 						<li class="text-decoration-none text-dark text-center align-items-center"> <b class="d-block">34290065</b>
@@ -2079,8 +2079,8 @@
 <!-- Message Box -->
 
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 
 	<script>
 		$('.navbar-nav > .nav-item').mouseover(function() {
@@ -2091,8 +2091,8 @@
 		});
 		$('.dropdown-menu > .dropdown-submenu').mouseover(function() {
 			if ( $( this ).is( ":first-child" ) ) {
-				$('.other_admin .dropdown-submenu:first-child').css('background','#00AEEF');
-			 $('.other_admin .dropdown-submenu:first-child a').css('color','#fff');	
+				$('.other_admin .dropdown-submenu:first-child').css('background','#f1eeee');
+			 $('.other_admin .dropdown-submenu:first-child a').css('color','#08b1f0');	
 			}else{ $('.other_admin .dropdown-submenu:first-child').css('background','none'); 
 			$('.other_admin .dropdown-submenu:first-child a').css('color','#000');
 			}
